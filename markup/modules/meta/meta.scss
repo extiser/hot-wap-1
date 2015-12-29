@@ -1,0 +1,40 @@
+.meta {
+	display: flex;
+
+	margin-top: 10px;
+
+	align-items: sketch;
+	@extend .wrapper;
+	justify-content: space-between;
+}
+
+.meta-item {
+	box-sizing: border-box;
+	padding: 10px 8px;
+
+	border: 1px solid #505050;
+	&--optimise {
+		width: 124px / 300px * 100%;
+	}
+	&--social {
+		width: 171px / 300px * 100%;
+	}
+	&__title {
+		text-align: center;
+		text-transform: uppercase;
+
+		color: #949494;
+
+		font-size: em(9px);
+	}
+	&__os {
+		margin: 20px auto 0;
+
+		@include bg($os);
+	}
+	&__social {
+		margin: 10px auto 0;
+
+		@include bg($social);
+	}
+}

@@ -1,0 +1,18 @@
+.header {
+	display: flex;
+
+	margin-bottom: 10px;
+	padding-top: 15px;
+
+	align-items: center;
+	@extend .wrapper;
+	justify-content: space-between;
+	&__logo {
+		display: block;
+
+		@include bg($logo);
+	}
+	&__18 {
+		@include bg($age);
+	}
+}
