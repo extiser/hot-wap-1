@@ -2,8 +2,10 @@
 	@extend .wrapper;
 	padding: 20px 0;
 	&__text {
+		font-family: 'Arial';
 		text-align: center;
-		color: #505050;
-		font-size: em(9px);
+		color: #777;
+		font-size: em(10px);
+		line-height: 10px;
 	}
 }

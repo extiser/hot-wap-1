@@ -344,9 +344,11 @@ html, body {
 .footer {
   padding: 20px 0; }
   .footer__text {
+    font-family: 'Arial';
     text-align: center;
-    color: #505050;
-    font-size: 0.5625em; }
+    color: #777;
+    font-size: 0.625em;
+    line-height: 10px; }
 
 .header {
   display: -webkit-box;
@@ -369,14 +371,14 @@ html, body {
     background-position: -155px 0px;
     width: 164px;
     height: 18px;
-    background-size: 319px, 82px;
+    background-size: 319px, 74px;
     background-repeat: no-repeat; }
   .header__18 {
     background-image: url(../images/png-sprite/96dpi/sprite.png);
-    background-position: -155px -43px;
+    background-position: 0px -48px;
     width: 29px;
     height: 26px;
-    background-size: 319px, 82px;
+    background-size: 319px, 74px;
     background-repeat: no-repeat; }
 
 .menu {
@@ -395,10 +397,17 @@ html, body {
     .menu__item:first-child {
       padding-top: 18px; }
     .menu__item:last-child {
+      padding-bottom: 0;
       border-bottom: 0; }
     .menu__item:before {
       color: #6c6c6c;
       font-size: 14px; }
+    @media screen and (max-width: 480px) {
+      .menu__item--best {
+        display: none; } }
+    @media screen and (max-width: 480px) {
+      .menu__item--date {
+        display: none; } }
 
 .meta {
   display: -webkit-box;
@@ -434,7 +443,7 @@ html, body {
     background-position: -155px -18px;
     width: 83px;
     height: 25px;
-    background-size: 319px, 82px;
+    background-size: 319px, 74px;
     background-repeat: no-repeat; }
   .meta-item__social {
     margin: 10px auto 0;
@@ -442,7 +451,7 @@ html, body {
     background-position: 0px 0px;
     width: 155px;
     height: 48px;
-    background-size: 319px, 82px;
+    background-size: 319px, 74px;
     background-repeat: no-repeat; }
 
 .player {
@@ -459,26 +468,32 @@ html, body {
     bottom: 0;
     left: 0;
     display: block;
+    box-sizing: border-box;
+    width: 220px;
+    height: 58px;
     margin: auto;
-    background-image: url(../images/png-sprite/96dpi/sprite.png);
-    background-position: 0px -48px;
-    width: 130px;
-    height: 34px;
-    background-size: 319px, 82px;
-    background-repeat: no-repeat; }
-  .player__cancel {
-    position: absolute;
-    right: 0;
-    bottom: 5px;
-    left: 0;
-    display: block;
-    margin: auto;
-    background-image: url(../images/png-sprite/96dpi/sprite.png);
-    background-position: -238px -18px;
-    width: 65px;
-    height: 19px;
-    background-size: 319px, 82px;
-    background-repeat: no-repeat; }
+    padding-left: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 5px;
+    background: #e74a4a;
+    font-family: "Arial";
+    font-size: 1.375em;
+    font-weight: bold;
+    line-height: 58px; }
+    .player__play:before {
+      top: 14px;
+      left: 20px;
+      width: 0;
+      height: 0;
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid transparent;
+      border-left: 30px solid #fff;
+      position: absolute;
+      display: block;
+      content: ""; }
   .player__control {
     width: 100%;
     background: url(../images/general/control.png) no-repeat center center;

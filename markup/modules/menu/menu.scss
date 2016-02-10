@@ -21,6 +21,8 @@
 			padding-top: 18px;
 		}
 		&:last-child {
+			padding-bottom: 0;
+
 			border-bottom: 0;
 		}
 		&:before {
@@ -39,9 +41,15 @@
 		}
 		&--best {
 			@extend .icon-prize-award;
+			@media screen and (max-width: 480px) {
+				display: none;
+			}
 		}
 		&--date {
 			@extend .icon-calendar;
+			@media screen and (max-width: 480px) {
+				display: none;
+			}
 		}
 		&--movie {
 			@extend .icon-film;

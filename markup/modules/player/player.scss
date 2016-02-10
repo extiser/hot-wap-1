@@ -17,22 +17,47 @@
 
 		display: block;
 
+		box-sizing: border-box;
+		width: 220px;
+		height: 58px;
 		margin: auto;
+		padding-left: 20px;
 
-		@include bg($play);
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+
+		color: #fff;
+		border-radius: 5px;
+		background: #e74a4a;
+
+		font-family: "Arial";
+		font-size: em(22px);
+		font-weight: bold;
+		line-height: 58px;
+		&:before {
+			top: 14px;
+			left: 20px;
+
+			width: 0;
+			height: 0;
+
+			border-top: 15px solid transparent;
+			border-bottom: 15px solid transparent;
+			border-left: 30px solid #fff;
+
+			@include content;
+		}
 	}
-	&__cancel {
-		position: absolute;
-		right: 0;
-		bottom: 5px;
-		left: 0;
-
-		display: block;
-
-		margin: auto;
-
-		@include bg($cancel);
-	}
+	// &__cancel {
+	// 	position: absolute;
+	// 	right: 0;
+	// 	bottom: 5px;
+	// 	left: 0;
+	// 	display: block;
+	// 	margin: auto;
+	// 	@include bg($cancel);
+	// }
 	&__control {
 		width: 100%;
 
