@@ -1,5 +1,6 @@
 .player {
 	width: 100%;
+	position: relative;
 	&__img {
 		position: relative;
 
@@ -10,7 +11,6 @@
 	}
 	&__play {
 		position: absolute;
-		top: 0;
 		right: 0;
 		bottom: 0;
 		left: 0;
@@ -20,8 +20,8 @@
 		box-sizing: border-box;
 		width: 220px;
 		height: 58px;
-		margin: auto;
 		padding-left: 20px;
+		margin: 34% auto 25%;
 
 		text-align: center;
 		text-decoration: none;
@@ -34,7 +34,7 @@
 		font-family: "Arial";
 		font-size: em(22px);
 		font-weight: bold;
-		line-height: 58px;
+		line-height: 58px !important;
 		&:before {
 			top: 14px;
 			left: 20px;
